@@ -1,11 +1,16 @@
 import { Link } from 'wouter'
+import { FaRegSadTear } from 'react-icons/fa'
 
 const NotFound = () => {
   return (
     <section className='encabezado'>
+      <div className='encabezado__slider--1' />
+      <div className='encabezado__slider--2' />
+      <div className='encabezado__slider--3' />
+      <div className='encabezado__slider--4' />
       <div className='encabezado__box'>
         <div className='encabezado__box--text'>
-          <i className='encabezado__box--icon far fa-sad-tear' />
+          <FaRegSadTear className='encabezado__box--icon' />
           <h1 className='encabezado__box--titulo'>Error 404</h1>
           <h2>Pagina no encontrada</h2>
           <Link href='/'>

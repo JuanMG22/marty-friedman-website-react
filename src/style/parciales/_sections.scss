@@ -291,6 +291,7 @@
 
         &--imagen-container {
             height: 18.75rem;
+            cursor: pointer;
             overflow: hidden;
             animation: fadeInUp;
             animation-duration: .8s;
@@ -338,10 +339,10 @@
             width: 100%;
             height: 100%;
             margin: 3.125rem auto;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-auto-rows: 1fr;
-            grid-gap: 0.625rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
         }
 
         &--text {

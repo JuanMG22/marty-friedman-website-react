@@ -15,7 +15,7 @@ const News = () => {
             <h3 className='noticias__box--titulo-noticia'>Jackson Guitars and Marty Friedman
               Team Up for the Pro Series Signature MF-1
             </h3>
-            <time className='noticias__box--fecha' datetime='04-02.2021'>26 de octubre de
+            <time className='noticias__box--fecha' dateTime='04-02.2021'>26 de octubre de
               2021
             </time>
           </div>

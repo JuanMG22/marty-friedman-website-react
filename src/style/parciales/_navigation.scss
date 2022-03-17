@@ -24,6 +24,10 @@
             width: 100vw;
         }
 
+        &--logolink {
+            line-height: 0;
+        }
+        
         &--logoimg {
             height: 3rem;
             filter: grayscale(100%);
