@@ -28,144 +28,168 @@ const albums = [
     title: 'Tokyo Jukebox 3',
     image: album1,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 1
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Wall of Sound',
     image: album2,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 2
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Inferno',
     image: album3,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 3
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Tokyo Jukebox 2',
     image: album4,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 4
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Bad D.N.A',
     image: album5,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 5
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Tokyo Jukebox',
     image: album6,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 6
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Future Addict',
     image: album7,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 7
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Exhibit a live in Europe',
     image: album8,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 8
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Loudspeaker',
     image: album9,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 9
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Music For Speeding',
     image: album10,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 10
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Risk',
     image: album11,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'megadeth',
     id: 11
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Cryptic Writings',
     image: album12,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'megadeth',
     id: 12
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'True Obsessions',
     image: album13,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 13
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Hidden Treasures',
     image: album14,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'megadeth',
     id: 14
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Introduction',
     image: album15,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 15
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Youthanasia',
     image: album16,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'megadeth',
     id: 16
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Scenes',
     image: album17,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 17
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Countdown to Extinction',
     image: album18,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'megadeth',
     id: 18
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Rust in Peace',
     image: album19,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'megadeth',
     id: 19
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Go off!',
     image: album20,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'cacophony',
     id: 20
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Dragon Kiss',
     image: album21,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'mf',
     id: 21
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'Speed Metal Symphony',
     image: album22,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'cacophony',
     id: 22
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'The Natives Are Restless',
     image: album23,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'hawaii',
     id: 23
   },
   {
-    title: 'Tokyo Jukebox 3',
+    title: 'One Nation Underground',
     image: album24,
     href: 'https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu',
+    cat: 'hawaii',
     id: 24
   }
 ]

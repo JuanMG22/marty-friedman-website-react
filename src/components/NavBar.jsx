@@ -1,6 +1,7 @@
 import logo from '../img/logo.png'
 import logomb from '../img/logo-mb.png'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const navLinks = [
   { title: 'Noticias', id: 1, link: '/noticias' },
@@ -13,6 +14,12 @@ const navLinks = [
 ]
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false)
+  const openCloseMenu = () => setOpen(!open)
+  const closeMenu = () => setOpen(false)
+
+  const isOpen = open ? 'header__navegacion--menu-mobile' : ''
+  const isOpenBtn = open ? 'active' : ''
   return (
     <header className='header'>
       <nav className='header__navegacion'>
@@ -23,7 +30,7 @@ const NavBar = () => {
             src={logo}
             alt='Marty Friedman Logo'
           />
-          <button id='btn-logo'>
+          <button onClick={closeMenu} id='btn-logo'>
             <img
               loading='lazy'
               className='header__navegacion--logoimg-mb'
@@ -32,15 +39,15 @@ const NavBar = () => {
             />
           </button>
         </Link>
-        <button id='btn-menu' className='header__navegacion--btn-menu'>
-          <span className='header__navegacion--linea-1 header__navegacion--lineas' />
-          <span className='header__navegacion--linea-2 header__navegacion--lineas' />
-          <span className='header__navegacion--linea-3 header__navegacion--lineas' />
+        <button onClick={openCloseMenu} id='btn-menu' className='header__navegacion--btn-menu '>
+          <span className={`header__navegacion--linea-1 header__navegacion--lineas l1-${isOpenBtn}`} />
+          <span className={`header__navegacion--linea-2 header__navegacion--lineas l2-${isOpenBtn}`} />
+          <span className={`header__navegacion--linea-3 header__navegacion--lineas l3-${isOpenBtn}`} />
         </button>
-        <ul className='header__navegacion--menu'>
+        <ul className={`header__navegacion--menu ${isOpen}`}>
           {navLinks.map((navLink) => (
             <li className='header__navegacion--item-menu' key={navLink.id}>
-              <Link to={navLink.link} className='header__navegacion--link-menu'>
+              <Link to={navLink.link} onClick={closeMenu} className='header__navegacion--link-menu'>
                 {navLink.title}
               </Link>
             </li>

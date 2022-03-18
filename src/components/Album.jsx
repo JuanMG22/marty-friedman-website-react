@@ -1,11 +1,11 @@
-const Album = ({ href, image, title }) => {
+const Album = ({ href, image, title, cat }) => {
   return (
     <a
       href={href}
       target='_blank'
       rel='noreferrer'
     >
-      <figure className='discografia__box--figure mf'>
+      <figure className={`discografia__box--figure ${cat}`}>
         <img
           loading='lazy'
           className='discografia__box--imagen'
