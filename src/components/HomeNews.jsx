@@ -1,6 +1,7 @@
 import noticiaImagen1 from '../img/noticia-imagen-1.jpg'
 import noticiaImagen2 from '../img/noticia-imagen-2.jpg'
 import noticiaImagen3 from '../img/noticia-imagen-3.jpg'
+import NewsItem from './NewsItem'
 
 const noticias = [
   {
@@ -39,37 +40,13 @@ const HomeNews = () => {
       >
         {
           noticias.map(noticia => (
-            <div className='noticias-index__container--box' key={noticia.id}>
-              <img
-                loading='lazy'
-                className='noticias-index__container--imagen img-thumbnail'
-                src={noticia.image}
-                alt='Marty Friedman with Jackson Guitar'
-              />
-              <time
-                className='noticias-index__container--fecha'
-                dateTime='04-02.2021'
-              >
-                {noticia.date}
-              </time>
-              <a
-                className='noticias-index__container--link'
-                href='./sections/noticias.html#noticia-1'
-              >
-                <h3 className='noticias-index__container--titulo'>
-                  {noticia.title}
-                </h3>
-              </a>
-              <p className='noticias-index__container--parrafo'>
-                {noticia.description}
-              </p>
-              <a
-                className='btn btn-full btn-noticia'
-                href='./sections/noticias.html#noticia-1'
-              >
-                Leer más
-              </a>
-            </div>
+            <NewsItem
+              key={noticia.id}
+              title={noticia.title}
+              image={noticia.image}
+              description={noticia.description}
+              date={noticia.date}
+            />
           ))
       }
       </div>

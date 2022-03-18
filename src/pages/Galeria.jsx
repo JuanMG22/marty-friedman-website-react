@@ -35,7 +35,7 @@ const options = {
     slideAnimationType: 'slide',
     slideTransitionSpeed: 0.3,
     slideTransitionTimingFunction: 'backOut',
-    overlayColor: 'rgba(255, 255, 255, 0.98)',
+    overlayColor: 'rgba(204, 204, 204, 0.97)',
     backgroundColor: '#fff'
   },
   buttons: {
