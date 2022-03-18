@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import Loader from './Loader'
 import Home from '../pages/Home'
-import Notfound from '../pages/Notfound.jsx'
+import NotFound from '../pages/NotFound.jsx'
 import News from '../pages/News'
 import Tour from '../pages/Tour'
 import Discografia from '../pages/Discografia'
@@ -11,7 +11,7 @@ import Galeria from '../pages/Galeria'
 import Videos from '../pages/Videos'
 import Gear from '../pages/Gear'
 
-const MainContent = () => {
+const Main = () => {
   useEffect(() => {
     AOS.init({
       once: true,
@@ -29,10 +29,10 @@ const MainContent = () => {
         <Route path='/galeria' element={<Galeria />} />
         <Route path='/videos' element={<Videos />} />
         <Route path='/gear' element={<Gear />} />
-        <Route path='*' element={<Notfound />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </main>
   )
 }
 
-export default MainContent
+export default Main
