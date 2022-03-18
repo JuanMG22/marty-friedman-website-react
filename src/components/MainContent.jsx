@@ -11,7 +11,7 @@ import Galeria from '../pages/Galeria'
 import Videos from '../pages/Videos'
 import Gear from '../pages/Gear'
 
-const Main = () => {
+const MainContent = () => {
   useEffect(() => {
     AOS.init({
       once: true,
@@ -35,4 +35,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default MainContent
