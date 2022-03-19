@@ -1,7 +1,8 @@
 import logo from '../img/logo.png'
 import logomb from '../img/logo-mb.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import * as Scroll from 'react-scroll'
 
 const navLinks = [
   { title: 'Noticias', id: 1, link: '/noticias' },
@@ -9,14 +10,26 @@ const navLinks = [
   { title: 'Discografia', id: 3, link: '/discografia' },
   { title: 'Galeria', id: 4, link: '/galeria' },
   { title: 'Videos', id: 5, link: '/videos' },
-  { title: 'Gear', id: 6, link: '/gear' },
-  { title: 'Contacto', id: 7, link: '/' }
+  { title: 'Gear', id: 6, link: '/gear' }
 ]
 
 const NavBar = () => {
   const [open, setOpen] = useState(false)
   const openCloseMenu = () => setOpen(!open)
   const closeMenu = () => setOpen(false)
+
+  const navigate = useNavigate()
+  const scroller = Scroll.scroller
+  const goToHomeAndScroll = async () => {
+    await closeMenu()
+    await navigate('/')
+    scroller.scrollTo('contact-section', {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      offset: 50
+    })
+  }
 
   const isOpen = open ? 'header__navegacion--menu-mobile' : ''
   const isOpenBtn = open ? 'active' : ''
@@ -52,6 +65,11 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
+          <li className='header__navegacion--item-menu'>
+            <a onClick={goToHomeAndScroll} className='header__navegacion--link-menu'>
+              Contacto
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

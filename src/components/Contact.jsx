@@ -1,6 +1,9 @@
+import * as Scroll from 'react-scroll'
+
 const Contact = () => {
+  const Element = Scroll.Element
   return (
-    <section className='contact' id='contact-section'>
+    <Element name='contact-section' className='contact'>
       <div data-aos='fade-up'>
         <h2 className='contact__heading'>
           <span className='contact__heading--span'>Contacto</span>
@@ -69,7 +72,7 @@ const Contact = () => {
           <input className='contact__form--enviar btn btn-full' type='submit' value='Enviar!' />
         </form>
       </div>
-    </section>
+    </Element>
   )
 }
 
