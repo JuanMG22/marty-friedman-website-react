@@ -2,6 +2,8 @@ import noticiaImagen1 from '../img/noticia-imagen-1.jpg'
 import noticiaImagen2 from '../img/noticia-imagen-2.jpg'
 import noticiaImagen3 from '../img/noticia-imagen-3.jpg'
 import NewsItem from './NewsItem'
+import * as Scroll from 'react-scroll'
+import { useNavigate } from 'react-router-dom'
 
 const noticias = [
   {
@@ -28,6 +30,16 @@ const noticias = [
 ]
 
 const HomeNews = () => {
+  const navigate = useNavigate()
+  const scroller = Scroll.scroller
+  const goToNewsAndScroll = async (noticia) => {
+    await navigate('/noticias')
+    scroller.scrollTo(noticia, {
+      delay: 100,
+      smooth: true,
+      offset: 50
+    })
+  }
   return (
     <section className='noticias-index'>
       <h2 className='noticias-index__heading' data-aos='fade-up'>
@@ -45,7 +57,9 @@ const HomeNews = () => {
               title={noticia.title}
               image={noticia.image}
               description={noticia.description}
+              goToNewsAndScroll={goToNewsAndScroll}
               date={noticia.date}
+              id={noticia.id}
             />
           ))
       }

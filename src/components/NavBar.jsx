@@ -24,7 +24,6 @@ const NavBar = () => {
     await closeMenu()
     await navigate('/')
     scroller.scrollTo('contact-section', {
-      duration: 1500,
       delay: 100,
       smooth: true,
       offset: 50

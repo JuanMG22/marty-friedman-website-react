@@ -1,4 +1,4 @@
-const NewsItem = ({ image, date, title, description }) => {
+const NewsItem = ({ image, date, title, description, goToNewsAndScroll, id }) => {
   return (
     <div className='noticias-index__container--box'>
       <img
@@ -24,12 +24,12 @@ const NewsItem = ({ image, date, title, description }) => {
       <p className='noticias-index__container--parrafo'>
         {description}
       </p>
-      <a
+      <btn
         className='btn btn-full btn-noticia'
-        href='./sections/noticias.html#noticia-1'
+        onClick={() => goToNewsAndScroll(`noticia-${id}`)}
       >
         Leer más
-      </a>
+      </btn>
     </div>
   )
 }
