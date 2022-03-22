@@ -1,6 +1,6 @@
 #  Marty Friedman WebSite
 
-## Musical artist WebSite Project in React, SASS, React Router Dom, React Helmter & more
+## Musical artist WebSite Project in React, SASS, React Router Dom, React Helmet & more
 
 
 ### Demo: [Marty Friedman Website](https://marty-friedman.netlify.app/)
