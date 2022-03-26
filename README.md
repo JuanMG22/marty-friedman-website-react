@@ -41,7 +41,7 @@
 | library/API's                                                    | used                      |
 | ---------------------------------------------------------------- | ------------------------- |
 | [AnimateCSS](https://animate.style/)                             | Animation Library         |
-| [React Helmet](https://github.com/nfl/react-helmet)              | Lib for SEO in React      |
+| [React Helmet](https://github.com/nfl/react-helmet)              | SEO Lib                   |
 | [React Icons](https://react-icons.github.io/react-icons/)        | React Icons Library       |
 | [Simple React Lightbox](https://github.com/michelecocuccio/simple-react-lightbox)| Image Gallery lib |
 
